@@ -1,0 +1,48 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.cursorStyle": "line",
+    "editor.wordWrap": "bounded",
+    "editor.lineNumbers": "on",
+    "editor.rulers": [
+        100,
+        120
+    ],
+    "editor.detectIndentation": true,
+    "editor.minimap.enabled": true,
+    "editor.smoothScrolling": true,
+    "editor.minimap.showSlider": "mouseover",
+    "editor.minimap.renderCharacters": true,
+    "editor.minimap.maxColumn": 120,
+    "editor.find.seedSearchStringFromSelection": "always",
+    "editor.find.autoFindInSelection": "never",
+    "editor.wordWrapColumn": 100,
+    "editor.wrappingIndent": "same",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+      },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.renderWhitespace": "all",
+        "editor.acceptSuggestionOnEnter": "off"
+    }
+}
