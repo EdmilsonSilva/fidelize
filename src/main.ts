@@ -1,8 +1,12 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import * as morgan from 'morgan';
+import * as cors from 'cors';
+import * as helmet from 'helmet';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(3000);
+  app.use(cors(), helmet(), morgan('dev'));
+  await app.listen(process.env['API_PORT'] || 3000);
 }
 bootstrap();
