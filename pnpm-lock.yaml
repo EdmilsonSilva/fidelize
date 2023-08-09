@@ -855,13 +855,14 @@ packages:
       detect-libc: 1.0.3
       https-proxy-agent: 5.0.0
       make-dir: 3.1.0
-      node-fetch: 2.6.5
+      node-fetch: 2.6.12
       nopt: 5.0.0
       npmlog: 4.1.2
       rimraf: 3.0.2
       semver: 7.5.4
       tar: 6.1.11
     transitivePeerDependencies:
+      - encoding
       - supports-color
     dev: false
 
@@ -952,6 +953,8 @@ packages:
       rxjs: 7.3.0
       tslib: 2.5.3
       uid: 2.0.2
+    transitivePeerDependencies:
+      - encoding
 
   /@nestjs/jwt@10.1.0(@nestjs/common@8.0.8):
     resolution: {integrity: sha512-iLwCGS25ybUxGS7i5j/Mwuyzvp/WxJftHlm8aLEBv5GV92apz6L1QVjxLdZrqXbzo++C8gdJauhzil8qitY+6w==}
@@ -1064,7 +1067,9 @@ packages:
     dependencies:
       chalk: 4.1.2
       consola: 2.15.3
-      node-fetch: 2.6.5
+      node-fetch: 2.6.12
+    transitivePeerDependencies:
+      - encoding
 
   /@sinonjs/commons@1.8.3:
     resolution: {integrity: sha512-xkNcLAn/wZaX14RPlwizcKicDk9G3F8m2nU3L7Ukm5zBgTwiT0wsoFAHx9Jq56fJA1z/7uKGtCRu16sOUCLIHQ==}
@@ -1878,6 +1883,7 @@ packages:
       '@mapbox/node-pre-gyp': 1.0.5
       node-addon-api: 3.2.1
     transitivePeerDependencies:
+      - encoding
       - supports-color
     dev: false
 
@@ -4262,9 +4268,14 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /node-fetch@2.6.5:
-    resolution: {integrity: sha512-mmlIVHJEu5rnIxgEgez6b9GgWXbkZj5YZ7fx+2r94a2E+Uirsp6HsPTPlomfdHtpt/B0cdKviwkoaM6pyvUOpQ==}
+  /node-fetch@2.6.12:
+    resolution: {integrity: sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==}
     engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
     dependencies:
       whatwg-url: 5.0.0
 
