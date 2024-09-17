@@ -115,8 +115,8 @@ importers:
         specifier: ^6.1.3
         version: 6.1.6
       ts-jest:
-        specifier: ^27.0.3
-        version: 27.0.5(@babel/core@7.15.5)(@types/jest@27.0.2)(babel-jest@27.2.3(@babel/core@7.15.5))(jest@27.2.3(ts-node@10.2.1(@types/node@16.10.1)(typescript@4.4.3)))(typescript@4.4.3)
+        specifier: ^27.1.5
+        version: 27.1.5(@babel/core@7.15.5)(@types/jest@27.0.2)(babel-jest@27.2.3(@babel/core@7.15.5))(jest@27.2.3(ts-node@10.2.1(@types/node@16.10.1)(typescript@4.4.3)))(typescript@4.4.3)
       ts-loader:
         specifier: ^9.2.3
         version: 9.2.6(typescript@4.4.3)(webpack@5.94.0)
@@ -2196,6 +2196,9 @@ packages:
   lodash.clonedeep@4.5.0:
     resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
 
+  lodash.memoize@4.1.2:
+    resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
+
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
@@ -3002,14 +3005,15 @@ packages:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
 
-  ts-jest@27.0.5:
-    resolution: {integrity: sha512-lIJApzfTaSSbtlksfFNHkWOzLJuuSm4faFAfo5kvzOiRAuoN4/eKxVJ2zEAho8aecE04qX6K1pAzfH5QHL1/8w==}
+  ts-jest@27.1.5:
+    resolution: {integrity: sha512-Xv6jBQPoBEvBq/5i2TeSG9tt/nqkbpcurrEG1b+2yfBrcJelOZF9Ml6dmyMh7bcW9JyFbRYpR5rxROSlBLTZHA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
       '@babel/core': '>=7.0.0-beta.0 <8'
       '@types/jest': ^27.0.0
       babel-jest: '>=27.0.0 <28'
+      esbuild: '*'
       jest: ^27.0.0
       typescript: '>=3.8 <5.0'
     peerDependenciesMeta:
@@ -3018,6 +3022,8 @@ packages:
       '@types/jest':
         optional: true
       babel-jest:
+        optional: true
+      esbuild:
         optional: true
 
   ts-loader@9.2.6:
@@ -5953,6 +5959,8 @@ snapshots:
 
   lodash.clonedeep@4.5.0: {}
 
+  lodash.memoize@4.1.2: {}
+
   lodash.merge@4.6.2: {}
 
   lodash.truncate@4.4.2: {}
@@ -6719,14 +6727,14 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  ts-jest@27.0.5(@babel/core@7.15.5)(@types/jest@27.0.2)(babel-jest@27.2.3(@babel/core@7.15.5))(jest@27.2.3(ts-node@10.2.1(@types/node@16.10.1)(typescript@4.4.3)))(typescript@4.4.3):
+  ts-jest@27.1.5(@babel/core@7.15.5)(@types/jest@27.0.2)(babel-jest@27.2.3(@babel/core@7.15.5))(jest@27.2.3(ts-node@10.2.1(@types/node@16.10.1)(typescript@4.4.3)))(typescript@4.4.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       jest: 27.2.3(ts-node@10.2.1(@types/node@16.10.1)(typescript@4.4.3))
       jest-util: 27.2.3
       json5: 2.2.3
-      lodash: 4.17.21
+      lodash.memoize: 4.1.2
       make-error: 1.3.6
       semver: 7.5.4
       typescript: 4.4.3
