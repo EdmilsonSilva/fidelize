@@ -2235,8 +2235,8 @@ packages:
     resolution: {integrity: sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==}
     engines: {node: '>= 0.6'}
 
-  micromatch@4.0.4:
-    resolution: {integrity: sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg==}
+  micromatch@4.0.8:
+    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
 
   mime-db@1.52.0:
@@ -2523,6 +2523,10 @@ packages:
 
   picomatch@2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
+    engines: {node: '>=8.6'}
+
+  picomatch@2.3.1:
+    resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
   picomatch@4.0.1:
@@ -3663,7 +3667,7 @@ snapshots:
       jest-util: 27.2.3
       jest-validate: 27.2.3
       jest-watcher: 27.2.3
-      micromatch: 4.0.4
+      micromatch: 4.0.8
       p-each-series: 2.2.0
       rimraf: 3.0.2
       slash: 3.0.0
@@ -3760,7 +3764,7 @@ snapshots:
       jest-haste-map: 27.2.3
       jest-regex-util: 27.0.6
       jest-util: 27.2.3
-      micromatch: 4.0.4
+      micromatch: 4.0.8
       pirates: 4.0.1
       slash: 3.0.0
       source-map: 0.6.1
@@ -5025,7 +5029,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.4
+      micromatch: 4.0.8
 
   fast-json-stable-stringify@2.1.0: {}
 
@@ -5496,7 +5500,7 @@ snapshots:
       jest-runner: 27.2.3
       jest-util: 27.2.3
       jest-validate: 27.2.3
-      micromatch: 4.0.4
+      micromatch: 4.0.8
       pretty-format: 27.2.3
     optionalDependencies:
       ts-node: 10.2.1(@types/node@16.10.1)(typescript@4.4.3)
@@ -5563,7 +5567,7 @@ snapshots:
       jest-serializer: 27.0.6
       jest-util: 27.2.3
       jest-worker: 27.5.1
-      micromatch: 4.0.4
+      micromatch: 4.0.8
       walker: 1.0.7
     optionalDependencies:
       fsevents: 2.3.2
@@ -5610,7 +5614,7 @@ snapshots:
       '@types/stack-utils': 2.0.1
       chalk: 4.1.2
       graceful-fs: 4.2.11
-      micromatch: 4.0.4
+      micromatch: 4.0.8
       pretty-format: 27.2.3
       slash: 3.0.0
       stack-utils: 2.0.5
@@ -5953,10 +5957,10 @@ snapshots:
 
   methods@1.1.2: {}
 
-  micromatch@4.0.4:
+  micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
-      picomatch: 2.3.0
+      picomatch: 2.3.1
 
   mime-db@1.52.0: {}
 
@@ -6216,6 +6220,8 @@ snapshots:
   picocolors@1.1.0: {}
 
   picomatch@2.3.0: {}
+
+  picomatch@2.3.1: {}
 
   picomatch@4.0.1: {}
 
@@ -6691,7 +6697,7 @@ snapshots:
     dependencies:
       chalk: 4.1.2
       enhanced-resolve: 5.8.3
-      micromatch: 4.0.4
+      micromatch: 4.0.8
       semver: 7.5.4
       typescript: 4.4.3
       webpack: 5.94.0
